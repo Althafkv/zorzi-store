@@ -23,6 +23,7 @@ export interface Order {
   cartItems: CartItem[];
   totalAmount: number;
   paymentMethod: 'cod' | 'razorpay';
+  paymentStatus?: 'pending' | 'paid' | 'failed';
   orderStatus: 'pending' | 'confirmed' | 'shipped' | 'delivered' | 'cancelled';
   razorpayPaymentId?: string;
   createdAt: Date;
