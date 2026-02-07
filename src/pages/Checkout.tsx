@@ -121,7 +121,7 @@ const Checkout: React.FC = () => {
       // 🔥 RAZORPAY PAYMENT
       // ======================
       const options = {
-        key: 'rzp_test_SCq3hRzARbb5aX', 
+        key: import.meta.env.VITE_RAZORPAY_KEY_ID, 
         amount: totalAmount * 100,
         currency: 'INR',
         name: 'Your Store',
